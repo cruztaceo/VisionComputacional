@@ -46,7 +46,7 @@ def main():
         os.mkdir(debug_dir)
     square_size = float(args.get('--square_size'))
 
-    pattern_size = (9, 6)
+    pattern_size = (7, 10)
     pattern_points = np.zeros((np.prod(pattern_size), 3), np.float32)
     pattern_points[:, :2] = np.indices(pattern_size).T.reshape(-1, 2)
     pattern_points *= square_size
